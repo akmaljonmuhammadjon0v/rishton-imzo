@@ -44,10 +44,14 @@ export default function ContactSection() {
 				setSubmitError('');
 			} else {
 				const data = await res.json().catch(() => ({}));
-				setSubmitError(data.error || 'Arizani yuborib bo‘lmadi. Qayta urinib ko‘ring.');
+				setSubmitError(
+					data.error || 'Arizani yuborib bo‘lmadi. Qayta urinib ko‘ring.',
+				);
 			}
 		} catch {
-			setSubmitError('Server bilan bog‘lanib bo‘lmadi. Internetni tekshirib, qayta urinib ko‘ring.');
+			setSubmitError(
+				'Server bilan bog‘lanib bo‘lmadi. Internetni tekshirib, qayta urinib ko‘ring.',
+			);
 		} finally {
 			setLoading(false);
 		}
@@ -66,7 +70,7 @@ export default function ContactSection() {
 							</div>
 							<h2 className='font-outfit text-3xl sm:text-4xl font-extrabold text-white mb-3'>
 								Savolingiz Bormi?{' '}
-								<span className='bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent'>
+								<span className='bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent'>
 									Biz Bilan Bog&apos;laning
 								</span>
 							</h2>
@@ -94,7 +98,11 @@ export default function ContactSection() {
 								</div>
 							) : (
 								<form onSubmit={handleSubmit} className='space-y-4'>
-									{submitError && <p role='alert' className='text-sm text-rose-400'>{submitError}</p>}
+									{submitError && (
+										<p role='alert' className='text-sm text-rose-400'>
+											{submitError}
+										</p>
+									)}
 									<div>
 										<label className='block text-xs font-bold text-slate-300 mb-1.5'>
 											Ismingiz:
@@ -138,7 +146,7 @@ export default function ContactSection() {
 									<button
 										type='submit'
 										disabled={loading}
-										className='w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-bold py-3.5 px-6 rounded-xl shadow-xl shadow-blue-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all text-sm'
+										className='w-full flex items-center justify-center gap-2 bg-linear-to-r from-blue-600 to-cyan-500 text-white font-bold py-3.5 px-6 rounded-xl shadow-xl shadow-blue-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all text-sm'
 									>
 										<Send className='w-4 h-4' />
 										<span>
@@ -158,11 +166,13 @@ export default function ContactSection() {
 
 								<div className='space-y-5 text-xs sm:text-sm'>
 									<div className='flex items-start gap-3'>
-										<div className='w-9 h-9 rounded-lg bg-blue-600/15 text-cyan-400 flex items-center justify-center flex-shrink-0'>
+										<div className='w-9 h-9 rounded-lg bg-blue-600/15 text-cyan-400 flex items-center justify-center shrink-0'>
 											<MapPin className='w-4 h-4' />
 										</div>
 										<div>
-											<div className='font-bold text-white'>Aniq Manzil (Google Plus Code):</div>
+											<div className='font-bold text-white'>
+												Aniq Manzil (Google Plus Code):
+											</div>
 											<div className='text-slate-300 mt-0.5 font-medium'>
 												97H5+FM9, Rishton, Farg&apos;ona Viloyati, Oʻzbekiston
 											</div>
@@ -178,7 +188,7 @@ export default function ContactSection() {
 									</div>
 
 									<div className='flex items-start gap-3'>
-										<div className='w-9 h-9 rounded-lg bg-blue-600/15 text-cyan-400 flex items-center justify-center flex-shrink-0'>
+										<div className='w-9 h-9 rounded-lg bg-blue-600/15 text-cyan-400 flex items-center justify-center shrink-0'>
 											<PhoneCall className='w-4 h-4' />
 										</div>
 										<div>
@@ -197,11 +207,13 @@ export default function ContactSection() {
 									</div>
 
 									<div className='flex items-start gap-3'>
-										<div className='w-9 h-9 rounded-lg bg-blue-600/15 text-cyan-400 flex items-center justify-center flex-shrink-0'>
+										<div className='w-9 h-9 rounded-lg bg-blue-600/15 text-cyan-400 flex items-center justify-center shrink-0'>
 											<Send className='w-4 h-4' />
 										</div>
 										<div>
-											<div className='font-bold text-white'>Telegram kanal & bot:</div>
+											<div className='font-bold text-white'>
+												Telegram kanal & bot:
+											</div>
 											<div className='mt-0.5'>
 												<a
 													href='https://t.me/imzorishton'
@@ -216,7 +228,7 @@ export default function ContactSection() {
 									</div>
 
 									<div className='flex items-start gap-3'>
-										<div className='w-9 h-9 rounded-lg bg-blue-600/15 text-cyan-400 flex items-center justify-center flex-shrink-0'>
+										<div className='w-9 h-9 rounded-lg bg-blue-600/15 text-cyan-400 flex items-center justify-center shrink-0'>
 											<Clock className='w-4 h-4' />
 										</div>
 										<div>

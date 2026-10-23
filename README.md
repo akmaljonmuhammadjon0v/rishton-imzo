@@ -1,18 +1,36 @@
-# IMZO Rishton
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Rishton filialining Next.js sayti: mahsulot katalogi, kalkulyator, ariza qabul qilish va admin panel.
+## Getting Started
 
-## Ishga tushirish
+First, run the development server:
 
-1. Node.js LTS va npm o‘rnating.
-2. `.env.example` faylidan `.env.local` yarating. `ADMIN_PASSWORD` va kamida 32 belgili tasodifiy `ADMIN_SESSION_SECRET` qiymatlarini belgilang.
-3. `npm install` va `npm run dev` buyrug‘ini bajaring.
-4. Sayt `http://localhost:3000`, boshqaruv paneli `/admin` manzilida ochiladi.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Telegram xabarnomasi admin panelidagi Telegram bo‘limidan sozlanadi. Bot tokeni serverdagi sozlamada saqlanadi va API javoblarida qaytarilmaydi.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Ishlab chiqarish muhiti
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-`npm run build` va `npm start` ishlating. `ADMIN_PASSWORD`, `ADMIN_SESSION_SECRET` va `DATA_DIR` ni hosting muhitida sozlang. `DATA_DIR` doimiy saqlanadigan, ilovaga yozish mumkin bo‘lgan diskka yo‘naltirilishi shart; konteynerning vaqtinchalik fayl tizimidan foydalanmang. `data/orders.json` va `data/settings.json` mijoz ma’lumotlari va Telegram sirlarini saqlaydi: zaxira nusxasini himoyalangan joyda saqlang, repozitoriyga qo‘shmang.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-JSON fayl saqlash bitta Node.js nusxasidagi kichik hajmli foydalanish uchun mo‘ljallangan. Bir nechta server nusxasi yoki yuqori trafik kerak bo‘lsa, `lib/db.ts` ni tranzaksiyali PostgreSQL kabi umumiy ma’lumotlar bazasiga almashtirish kerak.
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

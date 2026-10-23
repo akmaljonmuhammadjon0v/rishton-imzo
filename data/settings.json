@@ -1,0 +1,13 @@
+{
+  "prices": {
+    "thermo78": 1450000,
+    "engelberg76": 1150000,
+    "trio60": 850000,
+    "slidingBalcony": 1300000
+  },
+  "telegram": {
+    "enabled": false,
+    "chatId": "6189351050",
+    "botToken": "8714225545:AAEp-oSyAFAwaEVEiH_4lXRIr_sixfmBauk"
+  }
+}

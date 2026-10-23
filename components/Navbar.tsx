@@ -48,11 +48,11 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
 			</div>
 
 			{/* Main Sticky Navbar */}
-			<header className='sticky top-0 z-50 bg-[#080d15]/90 backdrop-blur-xl border-b border-white/10'>
+			<header className='sticky top-0 z-50 bg-imzo-dark/90 backdrop-blur-xl border-b border-white/10'>
 				<div className='max-w-7xl mx-auto px-4 h-20 flex items-center justify-between'>
 					{/* Logo */}
 					<a href='#' className='flex items-center gap-3 group'>
-						<div className='bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-black font-outfit text-xl px-3 py-1.5 rounded-lg shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-transform'>
+						<div className='bg-linear-to-r from-blue-600 to-cyan-500 text-white font-black font-outfit text-xl px-3 py-1.5 rounded-lg shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-transform'>
 							IMZO
 						</div>
 						<div className='flex flex-col'>
@@ -102,7 +102,9 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
 							className='text-sm font-medium text-slate-300 hover:text-amber-400 transition-colors flex items-center gap-1'
 						>
 							<span>Sharhlar</span>
-							<span className='text-[10px] bg-amber-400/20 text-amber-400 px-1.5 py-0.5 rounded font-bold'>5.0★</span>
+							<span className='text-[10px] bg-amber-400/20 text-amber-400 px-1.5 py-0.5 rounded font-bold'>
+								5.0★
+							</span>
 						</a>
 						<a
 							href='#faq'
@@ -122,7 +124,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
 					<div className='flex items-center gap-4'>
 						<button
 							onClick={onOpenModal}
-							className='hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-blue-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 active:translate-y-0 transition-all'
+							className='hidden sm:inline-flex items-center gap-2 bg-linear-to-r from-blue-600 to-cyan-500 text-white text-sm font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-blue-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 active:translate-y-0 transition-all'
 						>
 							<Ruler className='w-4 h-4' />
 							<span>Bepul O&apos;lchov Olish</span>
@@ -208,7 +210,7 @@ export default function Navbar({ onOpenModal }: NavbarProps) {
 									setMobileMenuOpen(false);
 									onOpenModal();
 								}}
-								className='w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-bold py-3 rounded-xl shadow-lg shadow-blue-500/25'
+								className='w-full flex items-center justify-center gap-2 bg-linear-to-r from-blue-600 to-cyan-500 text-white font-bold py-3 rounded-xl shadow-lg shadow-blue-500/25'
 							>
 								<Ruler className='w-4 h-4' />
 								<span>Bepul O&apos;lchov Olish</span>
