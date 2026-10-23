@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import 'tailwindcss';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-outfit: 'Outfit', sans-serif;
+  --color-imzo-dark: #080d15;
+  --color-imzo-card: #111827;
+  --color-imzo-cardGlass: rgba(17, 24, 39, 0.75);
+  --color-imzo-border: rgba(255, 255, 255, 0.1);
+  --color-imzo-blue: #0088ff;
+  --color-imzo-cyan: #00d2ff;
+  --color-imzo-gold: #fbbf24;
+}
 
 :root {
   --bg-dark: #080d15;

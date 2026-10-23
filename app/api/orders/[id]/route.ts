@@ -4,11 +4,11 @@ import { hasAdminSession, unauthorized } from '@/lib/admin-auth';
 
 export async function PATCH(
   req: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     if (!hasAdminSession(req)) return unauthorized();
-    const { id } = params;
+    const { id } = await params;
     const body = await req.json();
     const allowedStatuses = ['Yangi', 'Bog\'lanildi', 'O\'lchandi', 'Bajarildi', 'Bekor qilindi'];
     if (!body || Object.keys(body).length !== 1 || !allowedStatuses.includes(body.status)) {
