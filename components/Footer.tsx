@@ -1,6 +1,14 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect, useState } from 'react';
 
 export default function Footer() {
+	const [year, setYear] = useState<number | string>('2026');
+
+	useEffect(() => {
+		setYear(new Date().getFullYear());
+	}, []);
+
 	return (
 		<footer className='bg-[#05080e] border-t border-white/10 pt-16 pb-8 text-xs text-slate-400'>
 			<div className='max-w-7xl mx-auto px-4'>
@@ -132,8 +140,7 @@ export default function Footer() {
 				{/* Bottom */}
 				<div className='pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-slate-500'>
 					<div>
-						© {new Date().getFullYear()} IMZO Rishton Filiali. Barcha huquqlar
-						himoyalangan.
+						© {year} IMZO Rishton Filiali. Barcha huquqlar himoyalangan.
 					</div>
 					<div className='text-amber-400/80 font-medium'>
 						IMZO Official Dealer System

@@ -75,7 +75,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang='uz' className='scroll-smooth'>
+		<html lang='uz' className='scroll-smooth' suppressHydrationWarning>
 			<body className='bg-imzo-dark text-slate-100 min-h-screen selection:bg-blue-500 selection:text-white'>
 				<script
 					type='application/ld+json'
