@@ -1,4 +1,4 @@
-const showroomPhone = '+998903816666';
+const showroomPhone = '+998911582211';
 const form = document.querySelector('#order-form');
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
@@ -35,3 +35,5 @@ nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () =>
   nav.classList.remove('open');
   menuToggle.setAttribute('aria-expanded', 'false');
 }));
+
+
