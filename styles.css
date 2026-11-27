@@ -8,3 +8,4 @@
 
 
 .footer .instagram-footer{display:inline-flex;align-items:center;gap:7px;padding:9px 12px;border:1px solid transparent;border-radius:999px;background:linear-gradient(#f5f3ee,#f5f3ee) padding-box,linear-gradient(115deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5) border-box;color:var(--ink);font-size:10px;font-weight:700;transition:transform .2s,box-shadow .2s}.footer .instagram-footer:hover{transform:translateY(-2px);box-shadow:0 5px 16px #d6297622}.instagram-footer svg{width:17px;height:17px;fill:none;stroke:#d62976;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.instagram-footer .instagram-dot{fill:#d62976;stroke:none}.instagram-footer-arrow{font-size:14px;color:#a13db1;line-height:1}
+.phone-links{display:flex;flex-direction:column;align-items:flex-start;gap:11px}.phone-links .phone-link{min-height:20px;white-space:nowrap}
